@@ -1,6 +1,6 @@
 # Detecting Scam-Induced Transactions to Mule Accounts
 
-**Final Project — DE471 Data Analytics and Business Intelligence**
+**Final Project -- DE471 Data Analytics and Business Intelligence**
 **Srinakharinwirot University, College of Industrial Technology and Management**
 
 ---
@@ -160,6 +160,8 @@ Scatter plot: X = Account_Age_Days (log), Y = Avg_Monthly_Balance_THB (log), col
 **Business Interpretation:** ลูกค้าที่เปิดบัญชีใหม่ไม่ถึง 3 เดือน + ทำธุรกรรมขนาดใหญ่ผิดปกติ + balance ต่ำคือ profile ความเสี่ยงสูงสุด ธนาคารควรมี **enhanced due diligence window** ในช่วง 90 วันแรกหลัง onboarding
 
 ### 5.3 Dashboard
+
+![Dashboard Preview](docs/Dashboard_Preview.png)
 
 Built in **Tableau Public Desktop** with three logical tables (Accounts as Sender role, Accounts as Receiver role-played duplicate, Transactions, plus pre-computed Account_Features) connected via relationships. Pre-computing temporal features (Outflow_Ratio_24h, Counterparty_Diversity) in the EDA notebook rather than via LOD expressions keeps the dashboard responsive on the full 11,985-row dataset. Six visuals: 4 KPI cards, channel/region bar charts, hour-of-day heatmap, outflow ratio histogram, and a Top 20 Flagged Accounts table sorted by composite Risk_Score (0-100).
 
